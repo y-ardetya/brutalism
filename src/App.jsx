@@ -1,19 +1,16 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment,  ScrollControls } from "@react-three/drei";
+import { Environment, ScrollControls } from "@react-three/drei";
 import Experience from "./components/Experience";
 import * as THREE from "three";
-import { Perf } from "r3f-perf";
 
 const App = () => {
   return (
     <>
       <Canvas gl={{ antialias: false }} dpr={1}>
-        {/* <Perf /> */}
-        <color attach="background" args={["#000"]} />
         <directionalLight position={[0, 0, 5]} intensity={1} />
         <Environment preset="sunset" />
         <Rig />
-        <ScrollControls pages={5}>
+        <ScrollControls pages={3}>
           <Experience />
         </ScrollControls>
       </Canvas>

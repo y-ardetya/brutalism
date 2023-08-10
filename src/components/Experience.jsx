@@ -3,6 +3,7 @@ import Model from "./Ca";
 import Overlay from "./Overlay";
 import font1 from "/Bangers-Regular.ttf";
 import font2 from "/Aden.ttf";
+import font3 from "/ZenAntique-Regular.ttf";
 import { useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import Carousel from "./Carousel";
@@ -49,14 +50,14 @@ const Experience = () => {
           sentence={"brutalism"}
           position={[0, -1, -5]}
           rotation={[0, 0, 0.1]}
-          scale={8}
+          scale={viewport.width / 2}
         />
         <TextContent
           font={font1}
           sentence={"overwrite"}
-          position={[0, -15, -5]}
+          position={[0, -17, -5]}
           rotation={[0, 0, 0.1]}
-          scale={7}
+          scale={viewport.width / 2}
         />
         <TextContent
           font={font2}
@@ -66,11 +67,18 @@ const Experience = () => {
           scale={3}
         />
         <TextContent
+          font={font3}
+          sentence={"過半数を置き換える"}
+          position={[8, 4, -5]}
+          rotation={[0, 0, 0.1]}
+          scale={1}
+        />
+        <TextContent
           font={font1}
           sentence={"Overwhelm the World"}
           position={[0, -6, -5]}
           rotation={[0, 0, 0.1]}
-          scale={3.5}
+          scale={viewport.width / 4}
           strokeColor={"#f5f5f5"}
           fillOpacity={0.1}
           strokeWidth={0.01}
@@ -81,12 +89,13 @@ const Experience = () => {
           sentence={"Captivate"}
           position={[-6, 4, -5]}
           rotation={[0, 0, 0.1]}
-          scale={5}
+          scale={viewport.width / 3}
           strokeColor={"#f5f5f5"}
           fillOpacity={0.1}
           strokeWidth={0.01}
           strokeOpacity={0.3}
         />
+
         <Carousel />
       </Scroll>
       <Scroll html>
