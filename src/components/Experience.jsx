@@ -5,6 +5,7 @@ import font1 from "/Bangers-Regular.ttf";
 import font2 from "/Aden.ttf";
 import { useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
+import Carousel from "./Carousel";
 
 const Experience = () => {
   const ref = useRef();
@@ -86,6 +87,7 @@ const Experience = () => {
           strokeWidth={0.01}
           strokeOpacity={0.3}
         />
+        <Carousel />
       </Scroll>
       <Scroll html>
         <Overlay />

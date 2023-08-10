@@ -8,12 +8,12 @@ const App = () => {
   return (
     <>
       <Canvas gl={{ antialias: false }} dpr={1}>
-        <Perf />
+        {/* <Perf /> */}
         <color attach="background" args={["#000"]} />
         <directionalLight position={[0, 0, 5]} intensity={1} />
         <Environment preset="sunset" />
         <Rig />
-        <ScrollControls pages={3}>
+        <ScrollControls pages={5}>
           <Experience />
         </ScrollControls>
       </Canvas>

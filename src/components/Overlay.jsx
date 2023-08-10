@@ -11,10 +11,9 @@ const Overlay = () => {
           <div className="left-nav">
             <h1>Creative Developer</h1>
             <h1>Brutalism</h1>
-            <h1>Icikiwir</h1>
+            <h1>R3F + Drei</h1>
           </div>
         </div>
-       
       </div>
     </>
   );
