@@ -22,6 +22,7 @@ export default function Model(props) {
 
   useFrame((_, delta) => {
     group.current.rotation.x = scroll.offset;
+    // group.current.position.y = group.current.position.y - scroll.offset;
   });
 
   return (
@@ -29,8 +30,8 @@ export default function Model(props) {
       ref={group}
       {...props}
       dispose={null}
-      position={[-0.3, 0, 1.7]}
-      rotation={[0.4, 0.7, 0.4]}
+      position={[-0.3, 0, 1]}
+      rotation={[0.4, 1.2, 0.4]}
       scale={0.1}
     >
       <group
@@ -48,10 +49,10 @@ export default function Model(props) {
             transmission={1}
             roughness={0.5}
             clearcoat={1}
-            clearcoatRoughness={0.1}
+            clearcoatRoughness={1}
             thickness={1}
             ior={1}
-            chromaticAberration={0.5}
+            chromaticAberration={1}
             anisotropy={0.1}
             color="#c9ffa1"
           />
