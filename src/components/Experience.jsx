@@ -26,7 +26,7 @@ const Experience = () => {
         interval={1}
         attenuation={(width) => width}
       >
-        <mesh ref={ref}>
+        <mesh scale={0.001} ref={ref}>
           <sphereGeometry />
           <meshBasicMaterial transparent opacity={0} />
         </mesh>
