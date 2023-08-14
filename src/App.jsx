@@ -1,19 +1,23 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Environment, ScrollControls } from "@react-three/drei";
+import { Environment, Loader, ScrollControls } from "@react-three/drei";
 import Experience from "./components/Experience";
 import * as THREE from "three";
+import { Suspense } from "react";
 
 const App = () => {
   return (
     <>
       <Canvas gl={{ antialias: false }} dpr={1}>
-        <directionalLight position={[0, 0, 5]} intensity={1} />
-        <Environment preset="sunset" />
-        <Rig />
-        <ScrollControls pages={3}>
-          <Experience />
-        </ScrollControls>
+        <Suspense fallback={null}>
+          <directionalLight position={[0, 0, 5]} intensity={1} />
+          <Environment preset="sunset" />
+          <Rig />
+          <ScrollControls pages={3}>
+            <Experience />
+          </ScrollControls>
+        </Suspense>
       </Canvas>
+      <Loader />
     </>
   );
 };
