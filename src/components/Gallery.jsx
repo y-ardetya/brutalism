@@ -34,7 +34,11 @@ const Gallery = ({ texture, index }) => {
           position={[xPos + 3, -10.5, -5]}
           geometry={geometry}
         >
-          <imageMaterial ref={line1} uTexture={texture} />
+          <imageMaterial
+            key={ImageMaterial.key}
+            ref={line1}
+            uTexture={texture}
+          />
         </mesh>
 
         <mesh
@@ -43,7 +47,11 @@ const Gallery = ({ texture, index }) => {
           position={[xPos - 35, -23, -5]}
           geometry={geometry}
         >
-          <imageMaterial ref={line4} uTexture={texture} />
+          <imageMaterial
+            key={ImageMaterial.key}
+            ref={line4}
+            uTexture={texture}
+          />
         </mesh>
       </group>
     </>

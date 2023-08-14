@@ -42,7 +42,7 @@ const Experience = () => {
           cellSize={1}
           rotation={[Math.PI / 2, 0, 0]}
           position={[0, 0, -6]}
-          scale={5}
+          scale={2}
           fadeDistance={15}
         />
         <TextContent
