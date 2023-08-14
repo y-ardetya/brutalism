@@ -1,8 +1,7 @@
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useScroll } from "@react-three/drei";
-import { ImageMaterial } from "./imageMaterial";
-
+import { ImageMaterial } from "./ImageMaterial";
 import * as THREE from "three";
 
 const Gallery = ({ texture, index }) => {
